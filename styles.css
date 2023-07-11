@@ -16,12 +16,26 @@ color:  hsla(227, 12%, 61%, 1);
     background-repeat: no-repeat;
     background-position: right -8em top -6em, right -14em top 62.5vh;
 }
+.manage{
+    display: block;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-overflow: hidden;
-  background-color: blue;
+    display: flex;
+    width: 100%;
+  /* margin: 0;
+  padding: 0; */
+  /* background-color: blue; */
+}
+nav{
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    
+    position: relative;
+    padding-block: 3em;
 }
 a {
   display: block;
@@ -30,12 +44,18 @@ a {
 }
 
 li a{
-  float: left;
-  font-weight: 700;
+ float: left;
+font-weight: 700;
 text-decoration: none;
-  color: white;
-    text-align: center;
+color: white;
+text-align: center;
 }
 li a:hover {
   background-color: grey;
+}
+
+button{
+box-shadow: rgba(242, 95, 58, 0.5) 0px 0.75em 0.5em -0.37em;
+width: 15%;
+margin: auto
 }
