@@ -1,0 +1,41 @@
+/* *{
+    margin: none;
+    padding: none;
+} */
+body{
+background-color: hsla(0, 0%, 98%, 1);
+color:  hsla(227, 12%, 61%, 1);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+ .hero{
+    background-image: 
+    url(https://crackerfactory64.github.io/Frontend-Mentor-Projects/manage-landing-page-master/images/bg-tablet-pattern.svg);
+    background-size: 125%, 100%;
+    background-repeat: no-repeat;
+    background-position: right -8em top -6em, right -14em top 62.5vh;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+overflow: hidden;
+  background-color: blue;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+li a{
+  float: left;
+  font-weight: 700;
+text-decoration: none;
+  color: white;
+    text-align: center;
+}
+li a:hover {
+  background-color: grey;
+}
