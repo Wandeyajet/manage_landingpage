@@ -1,13 +1,18 @@
-/* *{
+*{
     margin: none;
     padding: none;
-} */
-body{
+    box-sizing: border-box;  
+}
+
+body{    
+  /* width: calc(100% - 3em); */
 background-color: hsla(0, 0%, 98%, 1);
 color:  hsla(227, 12%, 61%, 1);
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 500;
     line-height: 1.7;
+  
+    
 }
  .hero{
     background-image: 
@@ -15,28 +20,50 @@ color:  hsla(227, 12%, 61%, 1);
     background-size: 125%, 100%;
     background-repeat: no-repeat;
     background-position: right -8em top -6em, right -14em top 62.5vh;
-}
-.manage{
-    display: block;
-}
+  margin-left: 6rem;
+  }
 
 ul {
+  margin-left: 10rem;
   list-style-type: none;
     display: flex;
     width: 100%;
+   gap: 2em;
+   line-height: 1.7;
+   font-size: 0.8rem;
+   
+
+ /* .header__cta {
+    margin: auto;
+    width: 15%;
+
+
+  .hero {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+  } */
+
+
   /* margin: 0;
   padding: 0; */
   /* background-color: blue; */
 }
+    .manageLogo{ 
+  display: block;
+  margin-block-start: 0.75em;
+  max-width: 8em;
+    }
+
 nav{
-    background-color: yellow;
     align-items: center;
     display: flex;
     overflow: hidden;
-    
     position: relative;
     padding-block: 3em;
+  justify-content: space-between;
 }
+
 a {
   display: block;
   padding: 8px;
@@ -47,7 +74,7 @@ li a{
  float: left;
 font-weight: 700;
 text-decoration: none;
-color: white;
+color:  hsla(228, 39%, 23%, 1);
 text-align: center;
 }
 li a:hover {
@@ -56,6 +83,165 @@ li a:hover {
 
 button{
 box-shadow: rgba(242, 95, 58, 0.5) 0px 0.75em 0.5em -0.37em;
+display: block;
+border:none;
 width: 15%;
-margin: auto
+margin:  auto; 
+margin-inline: auto;
+margin-block-start: 1.5em;
+padding: 0.75em 2.2em;
+cursor: pointer;
+background-color: hsla(12, 88%, 59%, 1);
+border-radius: 100em;
+color:hsla(13, 100%, 96%, 1);
+font-size: 15px;
+font-weight: 700;
 }
+
+h1{
+  color:  hsla(228, 39%, 23%, 1);
+    font-size: 3rem;
+    flex-wrap: balance;
+    grid-row: 1;
+}
+/* .intro{
+  display: grid;
+}
+.illustratin {
+  order: -1;
+  grid-row: 1; */
+
+
+/*  
+.hero__img {
+    order: 1000;
+  }
+  .info {
+    gap: 4em;
+    grid-auto-flow: column;
+    margin-block-start: 8em;
+  }
+
+  .info__intro {
+    margin: unset;
+    text-align: start;
+  }
+
+  .info__intro > h2 {
+    font-size: 2.2rem;
+    margin-inline: unset;
+    max-width: unset;
+  }
+
+  .info__intro > p {
+    max-width: 35ch;
+  }
+
+  .info__points {
+    margin: unset;
+  }
+
+  .info__point > h3 {
+    background-color: transparent;
+    font-size: 1.1rem;
+    padding-left: 4.5em;
+  }
+
+  .info__point > p {
+    padding-left: 4.5em;
+  }
+
+  .testimonials__slider {
+    padding-block-end: 1em;
+  }
+
+  .slider__slide {
+    min-width: 40%;
+  }
+
+  .cta {
+    background-image: url(./images/bg-simplify-section-desktop.svg);
+    background-position: left 12em bottom 0;
+    background-size: 100%;
+    padding-block: 3em;
+  }
+
+  .cta > .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta h6 {
+    max-width: 20ch;
+    text-align: start;
+  }
+
+  .cta a {
+    margin-block: auto;
+    margin-inline: auto 0;
+  }
+
+  .footer__grid {
+    grid-auto-flow: column;
+    grid-template-columns: 1.5fr 3fr 2fr;
+  }
+
+  .footer__grid > * {
+    margin: unset;
+  }
+
+  .footer__socials {
+    gap: 6em;
+    order: -1;
+  }
+
+  .footer__logo {
+    order: -1;
+    margin-block-start: 1em;
+    margin-inline: 0 auto;
+    width: 60%;
+  }
+
+  .socials-list {
+    margin-block-start: auto;
+    place-self: start;
+  }
+
+  .socials-list img {
+    max-width: 1.5em;
+  }
+
+  .footer__nav > ul {
+    margin-inline-start: 4em;
+  }
+
+  footer div:has(.footer__newsletter-form) {
+    align-items: center;
+    order: 1000;
+    margin-block: 1em auto;
+  }
+
+  footer small {
+    text-align: end;
+    margin-block-start: unset;
+    margin-inline: auto 0;
+    transform: translateY(-3.5em);
+  }
+}
+
+@media (width < 800px) {
+  .header[data-menu-open="true"] > nav {
+    background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.5));
+    color: var(--color-primary-800);
+    display: block;
+    font-weight: var(--font-weight-bold);
+    height: 100dvh;
+    left: 0;
+    padding-block: 1em;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
